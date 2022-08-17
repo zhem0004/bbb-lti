@@ -36,7 +36,7 @@ RUN cd /source \
  && sed -i "s|BigBlueButton|$title|g" grails-app/i18n/*.properties \
  && grails war
 
-FROM tomcat:7-jre8
+FROM tomcat:10-jdk8-corretto
 
 WORKDIR $CATALINA_HOME
 
